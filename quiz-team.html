@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathe-Quiz - Team</title>
+    <link rel="stylesheet" href="style-team.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="team-name-display">Team X</h1>
+        <h2>Aktuelle Frage:</h2>
+        <div id="question-area">
+            <h3 id="question-text">Frage lädt...</h3>
+            <form id="answer-form">
+                <div id="options-container">
+                    <!-- Options will be populated by JavaScript -->
+                </div>
+                <button type="submit" id="submit-btn">Antwort abgeben</button>
+            </form>
+            <p id="feedback"></p>
+        </div>
+        <p>Euer Punktestand: <span id="team-score">0</span></p>
+        <button id="next-question-btn" style="display: none;">Nächste Frage</button>
+        <p id="game-over-message" style="display: none;">Alle Fragen beantwortet!</p>
+    </div>
+    <script src="script-team.js"></script>
+</body>
+</html>

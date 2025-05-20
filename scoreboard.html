@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Scoreboard</title>
+    <link rel="stylesheet" href="style-scoreboard.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mathe-Wettbewerb - Punktestand</h1>
+        <div class="scores">
+            <div class="team-panel">
+                <h2>Team A</h2>
+                <p class="score" id="scoreA">0</p>
+                <button onclick="addPoint('A')">+1 Punkt Team A</button>
+                <button onclick="subtractPoint('A')">-1 Punkt Team A</button>
+            </div>
+            <div class="team-panel">
+                <h2>Team B</h2>
+                <p class="score" id="scoreB">0</p>
+                <button onclick="addPoint('B')">+1 Punkt Team B</button>
+                <button onclick="subtractPoint('B')">-1 Punkt Team B</button>
+            </div>
+        </div>
+        <button onclick="resetScores()">Punkte zurücksetzen</button>
+    </div>
+    <script src="script-scoreboard.js"></script>
+</body>
+</html>
