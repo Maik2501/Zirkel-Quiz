@@ -39,7 +39,7 @@ const questions = [
     },
     {
         id: "K2014_B4",
-        text: "Mona und Lisa tauschen Adressen [...]. „Meine Postleitzahl ist 74336“, sagt Mona. „Die ist ja fast wie meine, es sind nur zwei Ziffern vertauscht“, stellt Lisa fest. Wie viele Möglichkeiten gibt es für Lisas Postleitzahl?",
+        text: "Mona und Lisa tauschen Adressen. „Meine Postleitzahl ist 74336“, sagt Mona. „Die ist ja fast wie meine, es sind nur zwei Ziffern vertauscht“, stellt Lisa fest. Wie viele Möglichkeiten gibt es für Lisas Postleitzahl?",
         options: { A: "6", B: "8", C: "9", D: "10", E: "12" },
         correctAnswer: "C" // Lösung: 5 Ziffern. Anzahl Positionspaare 5C2 = 10. Wenn die zwei '3'en getauscht werden, ändert sich nichts. 10-1=9.
     },
@@ -51,19 +51,19 @@ const questions = [
     },
     {
         id: "K2014_B6",
-        text: "Julius [...] „Ich glaube, es sind doppelt so viele Guppys wie Platys“. Johann: „Da hast du wohl einen Guppy für einen Platy gehalten. In Wirklichkeit sind es dreimal so viele Guppys wie Platys.“ Wie viele Guppys hat Johann?",
+        text: "Julius zählt Fische im Aquarium seines Bruders Johann. „Ich glaube, es sind doppelt so viele Guppys wie Platys“. Johann: „Da hast du wohl einen Guppy für einen Platy gehalten. In Wirklichkeit sind es dreimal so viele Guppys wie Platys.“ Wie viele Guppys hat Johann?",
         options: { A: "6", B: "8", C: "9", D: "12", E: "15" },
         correctAnswer: "C" // G_echt = 3P_echt. G_Julius = G_echt-1. P_Julius = P_echt+1. G_Julius = 2P_Julius => G_echt-1 = 2(P_echt+1) => 3P_echt-1=2P_echt+2 => P_echt=3. G_echt=9.
     },
     {
         id: "K2014_B9",
-        text: "Sechs Studenten [...] nutzen [...] die beiden Badezimmer, jeweils einzeln und unterschiedlich lange: 5, 7, 9, 14, 18 und 19 Minuten [...]. Wann können die sechs Studenten – bei geschickter Aufteilung – frühestens gemeinsam am Frühstückstisch sitzen? (Start 7:00 Uhr)",
+        text: "Sechs Studenten teilen in einer WG die beiden Badezimmer, jeweils einzeln und unterschiedlich lange: 5, 7, 9, 14, 18 und 19 Minuten [...]. Wann können die sechs Studenten – bei geschickter Aufteilung – frühestens gemeinsam am Frühstückstisch sitzen? (Start 7:00 Uhr)",
         options: { A: "um 7:36 Uhr", B: "um 7:37 Uhr", C: "um 7:38 Uhr", D: "um 7:39 Uhr", E: "um 7:40 Uhr" },
         correctAnswer: "B" // Gesamtdauer 72 Min. Ideal pro Bad: 36 Min. Bad1: 18,14,5 (37 Min). Bad2: 19,9,7 (35 Min). Max = 37 Min.
     },
     {
         id: "K2014_C2",
-        text: "Heute ist großes Pflaumenknödelessen bei Oma Hilde [...]. Wenn 2 Enkel nicht gekommen wären, dann würden die anderen Enkel jeder 3 Knödel mehr bekommen. Und wenn es 20 Knödel weniger wären, dann würde jeder 2 Knödel weniger bekommen. Wie viele Pflaumenknödel hat Oma Hilde gemacht?",
+        text: "Heute ist großes Pflaumenknödelessen bei Oma Hilde, alle Enkel sind da. Jeder Enkel bekommt gleich viele Knödel. Wenn 2 Enkel nicht gekommen wären, dann würden die anderen Enkel jeder 3 Knödel mehr bekommen. Und wenn es 20 Knödel weniger wären, dann würde jeder 2 Knödel weniger bekommen. Wie viele Pflaumenknödel hat Oma Hilde gemacht?",
         options: { A: "80", B: "90", C: "100", D: "120", E: "150" },
         correctAnswer: "D" // E Enkel, K Knödel/Enkel. Total T=EK. (E-2)(K+3)=T => 3E-2K=6. E(K-2)=T-20 => 2E=20 => E=10. 30-2K=6 => 2K=24 => K=12. T=120.
     },
@@ -87,14 +87,14 @@ const questions = [
     },
     {
         id: "K2014_C10",
-        text: "Insel Malsomalso: A-Leute (Wahrheit), B-Leute (Lüge), Malsomalsos (alternierend T/L). 20 Inselbewohner. 3 Fragen: 1. Bist du A? 2. Bist du M? 3. Bist du B? Antworten Ja: Q1=17, Q2=12, Q3=8. Wie viele A-Leute?",
+        text: "Jana schreibt Geschichten. In ihrer neuesten Erzählung erkundet Professor Teo Rettich die merkwürdige Kommunikation auf der winzigen Insel Malsomalso. Dort gibt es A-Leute, B-Leute und die Malsomalsos. A-Leute sagen immer die Wahrheit. B-Leute lügen stets. Jeder Malsomalso antwortet auf nacheinander gestellte Fragen stets abwechselnd mit der Wahrheit oder einer Lüge. Teo Rettich hat jedem der 20 Inselbewohner nacheinander dieselben 3 Fragen gestellt: 1. Bist du ein A-Leut? 2. Bist du ein Malsomalso? 3. Bist du ein B-Leut? Auf die 1. Frage antworteten 17 Bewohner mit „Ja“, auf die 2. Frage 12 und auf die 3. Frage 8. Die anderen antworteten jeweils mit „Nein“. Wie viele A-Leute wohnen auf der Insel Malsomalso?",
         options: { A: "3", B: "5", C: "9", D: "13", E: "17" },
         correctAnswer: "B" // A-Leut (a): J,N,N. B-Leut (b): J,J,N (lügt über Typ B). M-T (m_t): N,N,N. M-L (m_l): J,J,J. Gl: a+b+m_l=17, b+m_l=12, m_l=8. => m_l=8, b=4, a=5.
     },
     // Känguru 2011 Klassenstufen 7 und 8
     {
         id: "K2011_1",
-        text: "Bea hilft Lea beim Streichen [...]. Lea möchte senkrechte Streifen, abwechselnd rote und gelbe, je 50 cm breit. Der erste und der letzte Streifen sollen rot sein. Bea misst [...] „Das werden insgesamt 6 rote Streifen, das geht genau auf.“ Wie lang ist die Wand?",
+        text: "Bea hilft Lea beim Streichen. Lea möchte senkrechte Streifen, abwechselnd rote und gelbe, je 50 cm breit. Der erste und der letzte Streifen sollen rot sein. Bea misst [...] „Das werden insgesamt 6 rote Streifen, das geht genau auf.“ Wie lang ist die Wand?",
         options: { A: "4,50 m", B: "5,50 m", C: "6,50 m", D: "7,50 m", E: "8,50 m" },
         correctAnswer: "B" // 6 rote, 5 gelbe. RGRGRGRGRGR. 11 Streifen * 50cm = 550cm = 5,50m.
     },
